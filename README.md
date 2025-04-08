@@ -1,89 +1,133 @@
-### TaskMaster Pro: Advanced Task & Project Management Dashboard
+# TaskMaster Pro
 
-## Project Overview
+<div align="center">
+  <img src="public/logo.png" alt="TaskMaster Pro Logo" width="120" height="120" style="border-radius: 10px;">
+  <h3>Advanced Productivity and Task Management Platform</h3>
+</div>
 
-TaskMaster Pro is a comprehensive productivity and task management platform built with Next.js and React. It provides users with a feature-rich dashboard for managing tasks, projects, time tracking, and team collaboration in one unified interface.
+## Overview
 
-## Key Features
+TaskMaster Pro is a comprehensive productivity and task management application built with React, Next.js, and Tailwind CSS. It helps users organize tasks, track time, manage projects, and analyze productivity metrics in a modern, responsive interface.
 
-### 1. Dashboard
+## Features
 
-- Customizable widget-based dashboard with drag-and-drop functionality
-- Various widgets including task summaries, productivity charts, upcoming tasks, and project progress
-- User-configurable layout that persists between sessions
+- **Dashboard** - Customizable dashboard with widgets for productivity tracking, task summaries, and upcoming activities
+- **Task Management** - Create, organize, and track tasks with priorities, categories, and due dates
+- **Calendar View** - Schedule and view tasks in a clean calendar interface with day, week, and month views
+- **Project Management** - Organize tasks into projects with progress tracking and team collaboration
+- **Time Tracking** - Track time spent on tasks and projects for accurate productivity measurement
+- **Analytics** - Visualize productivity data with charts and graphs showing trends and patterns
+- **Team Collaboration** - Invite team members, assign tasks, and track team activity
+- **Profile Management** - Personalized user profiles with statistics and activity history
+- **Responsive Design** - Fully responsive layout that works on desktop, tablet, and mobile devices
+- **Dark Mode** - Toggle between light and dark themes for comfortable viewing
 
+## Technologies
 
-### 2. Task Management
+- **Frontend**: React, Next.js 14, TypeScript
+- **Styling**: Tailwind CSS, Shadcn UI
+- **State Management**: React Context API
+- **Charts**: Recharts
+- **Authentication**: Custom authentication system with JWT
+- **Icons**: Lucide React
+- **Forms**: React Hook Form
 
-- Create, edit, and organize tasks with priorities, due dates, and categories
-- Task filtering and search capabilities
-- Task completion tracking and statistics
+## Screenshots
 
+<div align="center">
+  <img src="public/screenshots/dashboard.png" alt="Dashboard" width="800">
+  <p>Dashboard View</p>
+</div>
 
-### 3. Calendar View
+<div align="center">
+  <img src="public/screenshots/calendar.png" alt="Calendar" width="800">
+  <p>Calendar View</p>
+</div>
 
-- Interactive calendar for visualizing tasks and deadlines
-- Day, week, and month views
-- Recurring task support
+<div align="center">
+  <img src="public/screenshots/analytics.png" alt="Analytics" width="800">
+  <p>Analytics View</p>
+</div>
 
+## Getting Started
 
-### 4. Project Management
+### Prerequisites
 
-- Project creation and tracking
-- Progress visualization
-- Team member assignment and collaboration
-- Project categorization and filtering
+- Node.js 18.x or higher
+- npm or yarn
 
+### Installation
 
-### 5. Time Tracking
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/taskmaster-pro.git
+   cd taskmaster-pro
+   ```
 
-- Built-in time tracker for tasks and projects
-- Time entry logging and reporting
-- Productivity analytics based on time data
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-### 6. Team Collaboration
-
-- Team member management
-- Activity feeds showing recent actions
-- Task assignment and notifications
-
-
-### 7. Analytics
-
-- Comprehensive analytics dashboard
-- Task completion rates and productivity trends
-- Time distribution and project progress charts
-- Category breakdowns and performance metrics
-
-
-### 8. User Management
-
-- User authentication and profile management
-- Role-based permissions
-- Customizable user settings
-
-
-## Technical Implementation
-
-- **Frontend**: Next.js 14 (App Router), React, TypeScript
-- **UI Components**: Tailwind CSS with shadcn/ui component library
-- **State Management**: React Hooks and Context API
-- **Data Visualization**: Recharts for interactive charts and graphs
-- **Responsive Design**: Mobile-first approach with adaptive layouts
-- **Authentication**: Custom auth implementation (can be extended to OAuth providers)
-- **Persistence**: Local storage for demo purposes (can be connected to a backend)
-
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
 ## Project Structure
 
-The application follows a clean, modular architecture:
+```
+taskmaster-pro/
+├── app/                    # Next.js app directory
+│   ├── (auth)/             # Authentication routes
+│   ├── (dashboard)/        # Dashboard and main app routes
+│   ├── layout.tsx          # Root layout component
+│   └── page.tsx            # Root page component
+├── components/             # Reusable React components
+│   ├── analytics/          # Analytics components
+│   ├── auth/               # Authentication components
+│   ├── dashboard/          # Dashboard components
+│   ├── profile/            # Profile components
+│   ├── projects/           # Project management components
+│   ├── settings/           # Settings components
+│   ├── tasks/              # Task management components
+│   ├── team/               # Team collaboration components
+│   ├── time-tracking/      # Time tracking components
+│   └── ui/                 # UI components (buttons, inputs, etc.)
+├── hooks/                  # Custom React hooks
+├── lib/                    # Utility functions and types
+├── public/                 # Static assets
+└── README.md               # Project documentation
+```
 
-- Component-based UI with reusable elements
-- Feature-based organization (tasks, projects, calendar, etc.)
-- Responsive layouts for all device sizes
-- Dark/light theme support
-- Accessibility considerations throughout
+## Future Enhancements
 
+- Sync with Google Calendar and other external calendars
+- Email notifications for task deadlines and reminders
+- Integration with productivity tools like Slack and Microsoft Teams
+- Mobile app with offline capability
+- AI-powered task recommendations and productivity insights
+- Advanced reporting and export capabilities
 
-This project demonstrates modern React patterns, Next.js best practices, and advanced UI/UX design principles for productivity applications.
+## License
+
+MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [Shadcn UI](https://ui.shadcn.com/) for the beautiful UI components
+- [Recharts](https://recharts.org/) for the visualization components
+- [Lucide React](https://lucide.dev/) for the icon set
+- All contributors who have helped shape this project
+
+---
+
+<div align="center">
+  <p>Made with ❤️ by Your Name</p>
+</div>
